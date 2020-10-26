@@ -36,9 +36,9 @@ public class TaskListFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         SharedViewModel viewModel = new ViewModelProvider(requireActivity()).get(SharedViewModel.class);
         List<Item> list = new ArrayList<>();
-        list.add(new Item("Monday", "Debugging", "Learn about different types of errors in Java and practice finding them"));
-        list.add(new Item("Monday", "Design patterns", "Learn more about Observer and Adapter patterns"));
-        list.add(new Item("Tuesday", "Algorithms", "Study quick sort algorithm"));
+        list.add(new Item("Senin", "Data Warehouse", "Data warehouse adalah mapel semester 5"));
+        list.add(new Item("Rabu", "PPL", "PPL adalah mapel semester 5"));
+        list.add(new Item("Jumat", "Proyek 2", "Proyek 2 adalah mapel semester 5"));
 
         RecyclerViewAdapter adapter = new RecyclerViewAdapter(list);
         binding.recyclerView.setAdapter(adapter);
